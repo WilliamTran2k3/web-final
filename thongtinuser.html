@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="a.css">
+        <link rel="stylesheet" href="ttuser.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <nav class="my-sidebar close">
+            <header>
+                <a href="/">
+                    <div class="logo">
+                        <div class="brand">W</div>
+                        <div class="text header-text">
+                            <span class="name">WillCinema</span>
+                        </div>
+                    </div>
+                </a>
+                <i class="fa-solid fa-angle-right toggle"></i>
+            </header>
+            <div class="my-menu-bar">
+                <div class="my-menu">
+                    <li class="search-box">
+                        <i
+                            id="search-icon"
+                            class="fa-solid fa-magnifying-glass icon"
+                        ></i>
+                        <input
+                            type="search"
+                            name=""
+                            id="search-input"
+                            placeholder="Tìm kiếm"
+                            spellcheck="false"
+                        />
+                    </li>
+                    <ul class="my-menu-links">
+                        <li class="my-nav-link">
+                            <a href="/" id="home">
+                                <i class="fa-solid fa-house-chimney icon"></i>
+                                <span class="nav-text text">Trang chủ</span>
+                                <span class="tooltip-text">Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="my-nav-link">
+                            <a href="#showing" id="showing">
+                                <i class="fa-solid fa-tv icon"></i>
+                                <span class="nav-text text"
+                                    >Phim đang chiếu</span
+                                >
+                                <span class="tooltip-text"
+                                    >Phim đang chiếu</span
+                                >
+                            </a>
+                        </li>
+                        <li class="my-nav-link">
+                            <a href="#comming" id="comming">
+                                <i class="fa-solid fa-calendar-days icon"></i>
+                                <span class="nav-text text"
+                                    >Phim sắp chiếu</span
+                                >
+                                <span class="tooltip-text">Phim sắp chiếu</span>
+                            </a>
+                        </li>
+                        <li class="my-nav-link">
+                            <a href="#cinema" id="cinema">
+                                <i class="fa-solid fa-masks-theater icon"></i>
+                                <span class="nav-text text">Hệ thống rạp</span>
+                                <span class="tooltip-text">Hệ thống rạp</span>
+                            </a>
+                        </li>
+                        <li class="my-nav-link">
+                            <a href="#preferential" id="preferential">
+                                <i
+                                    class="fa-solid fa-hand-holding-dollar icon"
+                                ></i>
+                                <span class="nav-text text">Ưu đãi</span>
+                                <span class="tooltip-text">Ưu đãi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li>
+                        <a href="#">
+                            <i
+                                class="fa-solid fa-right-from-bracket icon logout-icon"
+                            ></i>
+                            <span class="nav-text text">Đăng xuất</span>
+                            <span class="tooltip-text">Đăng xuất</span>
+                        </a>
+                    </li>
+                    <li class="theme-mode">
+                        <div class="moon-sun">
+                            <i class="far fa-moon icon moon"></i>
+                            <i class="far fa-sun icon sun"></i>
+                        </div>
+                        <span class="theme-mode-text text">Dark Mode</span>
+                        <span class="tooltip-text">Dark/Light Mode</span>
+
+                        <div class="toggle-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </li>
+                </div>
+                <div class="user-icon">
+                    <a href="thongtinuser.html">
+                        <img src="./assets/user.png" alt="" />
+                        <span class="text">Trần Tấn Thành</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="my-sidebar-bottom">
+            <ul class="my-menu-bottom-links">
+                <li class="my-nav-bottom-link active">
+                    <a href="/" id="home">
+                        <i class="fa-solid fa-house-chimney icon"></i>
+                        <span class="nav-text text">Trang chủ</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link">
+                    <a href="#comming" id="comming">
+                        <i class="fa-solid fa-calendar-days icon"></i>
+                        <span class="nav-text text">Phim sắp chiếu</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link">
+                    <a href="#cinema" id="cinema">
+                        <i class="fa-solid fa-masks-theater icon"></i>
+                        <span class="nav-text text">Hệ thống rạp</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link">
+                    <a href="#preferential" id="preferential">
+                        <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                        <span class="nav-text text">Ưu đãi</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link has-sub-menu">
+                    <i class="fa-sharp fa-solid fa-gear icon"></i>
+                    <span class="nav-text text">Cài đặt</span>
+                    <ul class="sub-menu-nav">
+                        <li class="theme-mode">
+                            <div class="toggle-switch">
+                                <div class="switch"></div>
+                            </div>
+                            <span class="sub-menu-text">Dark Mode</span>
+                        </li>
+                        <li>
+                            <a href="thongtinuser.html"
+                                ><i class="fa-solid fa-user icon sub-icon"></i>
+                                <span class="sub-menu-text">Thông tin</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i
+                                    class="fa-solid fa-right-from-bracket icon logout-icon sub-icon"
+                                ></i>
+                                <span class="sub-menu-text">Đăng xuất</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="home">
+            <div class="container">
+                <div class="title-info">
+                    <h2 class="title-page mb-4 text">Thông tin cá nhân</h2>
+                </div>
+                <div class="user-info-wrapper">
+                    <div class="user-profile-card">
+                        <div class="group-avatar">
+                            <img src="./assets/user.png" alt="" />
+                            <h5 class="user-name text">Trần Tấn Thành</h5>
+                        </div>
+                        <div class="sovemua">
+                            <p class="text">Vé đã mua</p>
+                            <p style="color: rgb(232, 165, 39)">10</p>
+                        </div>
+                        <div class="tichdiem">
+                            <p class="text">Tích điểm cá nhân</p>
+                            <p style="color: rgb(28, 145, 135)">60</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-wrapper">
+                        <form action="">
+                            <div class="detail-info">
+                                <div class="info-box">
+                                    <span class="text">Họ tên</span>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        value="Trần Tấn Thành"
+                                    />
+                                </div>
+                                <div class="info-box">
+                                    <span class="text">Số điện thoại</span>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        value="0907640698"
+                                    />
+                                </div>
+                                <div class="info-box">
+                                    <span class="text">Email</span>
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id=""
+                                        value="trantanthanh9a10@gmail.com"
+                                    />
+                                </div>
+                                <div class="info-box">
+                                    <span class="text">Ngày sinh</span>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        value="30/11/2003"
+                                    />
+                                </div>
+                            </div>
+                            <button type="submit" class="my-btn">
+                                Cập nhật thông tin
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="title-history">
+                    <h2 class="title-page mb-4 text">Lịch sử mua vé phim</h2>
+                </div>
+                <div class="history-user">
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên phim</th>
+                                <th>Số vé</th>
+                                <th>Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Aquaman</td>
+                                <td>1</td>
+                                <td>15/06/2021</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td>Dr.Strange</td>
+                                <td>2</td>
+                                <td>01/02/2022</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Avatar 2</td>
+                                <td>1</td>
+                                <td>20/10/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <footer class="text-center text-lg-start text-muted">
+                <div class="container" style="color: var(--text-color)">
+                    <section class="p-3">
+                        <div class="container text-center text-md-start mt-5">
+                            <div class="row mt-3">
+                                <div
+                                    class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"
+                                >
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        <i class="fas fa-gem me-3"></i
+                                        ><span style="color: var(--text-color)"
+                                            >WillCinema</span
+                                        >
+                                    </h6>
+                                    <p>
+                                        Web đặt vé xem phim uy tín hàng đầu Việt
+                                        Nam
+                                    </p>
+                                </div>
+                                <div
+                                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+                                >
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Hệ thống rạp
+                                    </h6>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >WillCinema Quận 5</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >WillCinema Quận 6</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >WillCinema Quận 7</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >WillCinema Quận 8</a
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"
+                                >
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Chính sách và quy định
+                                    </h6>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >Quy định chung</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="#!"
+                                            class="text-reset text-decoration-none"
+                                            >Điều khoản giao dịch</a
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                                >
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Liên hệ
+                                    </h6>
+                                    <p>
+                                        <i class="fas fa-home me-3"></i>
+                                        Nguyễn Hữu Thọ, Quận 7, TP.HCM
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        willcinema@gmail.com
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone me-3"></i>
+                                        + 01 234 567 88
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="text-center p-4">
+                        © 2023 Copyright: WillCinema
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>

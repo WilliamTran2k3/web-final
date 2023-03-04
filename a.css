@@ -1,0 +1,106 @@
+.my-sidebar-bottom {
+    width: 100%;
+	height: 80px;
+    /* height: 50px; */
+    background: var(--sidebar-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+	z-index: 10;
+	border-radius: 10px;
+	box-shadow: rgba(235, 235, 243, 0.8) 0px 7px 29px 0px;
+}
+.my-menu-bottom-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.my-nav-bottom-link a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    text-decoration: none;
+    padding: 10px;	
+}
+.my-nav-bottom-link.active .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--sidebar-color);
+	width: 40px;
+	height: 40px;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	transition: background-color 1s linear;
+}
+.my-nav-bottom-link.active .sub-icon {
+	background-color: var(--toggle-mode-color);
+}
+.my-nav-bottom-link .toggle-switch {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.my-nav-bottom-link .text {
+    display: none;
+}
+
+.my-nav-bottom-link.active .text {
+    color: var(--primary-color) !important;
+}
+.my-nav-bottom-link.active .nav-text {
+    display: block;
+}
+.has-sub-menu {
+    position: relative;
+    padding: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.has-sub-menu.active .sub-menu-nav{
+	clip-path: inset(0 0 0 0);
+	transition: clip-path 1s;
+}
+.sub-menu-nav {
+    position: absolute;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    background-color: var(--primary-color);
+    right: 0;
+    top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    clip-path: inset(0 50% 0 round 40px);
+	transition: clip-path 0.5s ease;
+}
+.sub-menu-nav.mid {
+    right: 50% !important;
+    transform: translateX(50%);
+	transition: clip-path 0.5s ease;
+}
+.sub-menu-nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-menu-nav i {
+    color: var(--sidebar-color);
+    min-height: 22px;
+}
+.sub-menu-nav span {
+    white-space: nowrap;
+    color: var(--sidebar-color);
+}
+

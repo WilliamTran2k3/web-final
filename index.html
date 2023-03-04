@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="a.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -21,14 +22,16 @@
         />
     </head>
     <body>
-        <nav class="my-sidebar">
+        <nav class="my-sidebar close">
             <header>
-                <div class="logo">
-                    <div class="brand">W</div>
-                    <div class="text header-text">
-                        <span class="name">WillCinema</span>
+                <a href="/">
+                    <div class="logo">
+                        <div class="brand">W</div>
+                        <div class="text header-text">
+                            <span class="name">WillCinema</span>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <i class="fa-solid fa-angle-right toggle"></i>
             </header>
             <div class="my-menu-bar">
@@ -48,7 +51,7 @@
                     </li>
                     <ul class="my-menu-links">
                         <li class="my-nav-link">
-                            <a href="#home" id="home">
+                            <a href="/" id="home">
                                 <i class="fa-solid fa-house-chimney icon"></i>
                                 <span class="nav-text text">Trang chủ</span>
                                 <span class="tooltip-text">Trang chủ</span>
@@ -83,7 +86,9 @@
                         </li>
                         <li class="my-nav-link">
                             <a href="#preferential" id="preferential">
-                                <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                                <i
+                                    class="fa-solid fa-hand-holding-dollar icon"
+                                ></i>
                                 <span class="nav-text text">Ưu đãi</span>
                                 <span class="tooltip-text">Ưu đãi</span>
                             </a>
@@ -113,7 +118,82 @@
                         </div>
                     </li>
                 </div>
+                <div class="user-icon">
+                    <a href="thongtinuser.html">
+                        <img src="./assets/user.png" alt="" />
+                        <span class="text">Trần Tấn Thành</span>
+                    </a>
+                </div>
             </div>
+        </nav>
+        <nav class="my-sidebar-bottom">
+            <ul class="my-menu-bottom-links">
+                <li class="my-nav-bottom-link active">
+                    <a href="/" id="home">
+                        <i class="fa-solid fa-house-chimney icon"></i>
+                        <span class="nav-text text">Trang chủ</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link has-sub-menu">
+                        <i class="fa-solid fa-calendar-days icon"></i>
+                        <span class="nav-text text">Phim</span>
+                        <ul class="sub-menu-nav mid">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-user icon sub-icon"></i>
+                                    <span class="sub-menu-text">Đang chiếu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i
+                                        class="fa-solid fa-right-from-bracket icon logout-icon sub-icon"
+                                    ></i>
+                                    <span class="sub-menu-text">Sắp chiếu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link">
+                    <a href="#cinema" id="cinema">
+                        <i class="fa-solid fa-masks-theater icon"></i>
+                        <span class="nav-text text">Hệ thống rạp</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link">
+                    <a href="#preferential" id="preferential">
+                        <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                        <span class="nav-text text">Ưu đãi</span>
+                    </a>
+                </li>
+                <li class="my-nav-bottom-link has-sub-menu">
+                    <i class="fa-sharp fa-solid fa-gear icon"></i>
+                    <span class="nav-text text">Cài đặt</span>
+                    <ul class="sub-menu-nav">
+                        <li class="theme-mode">
+                            <div class="toggle-switch">
+                                <div class="switch"></div>
+                            </div>
+                            <span class="sub-menu-text">Dark Mode</span>
+                        </li>
+                        <li>
+                            <a href="thongtinuser.html"
+                                ><i class="fa-solid fa-user icon sub-icon"></i>
+                                <span class="sub-menu-text">Thông tin</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i
+                                    class="fa-solid fa-right-from-bracket icon logout-icon sub-icon"
+                                ></i>
+                                <span class="sub-menu-text">Đăng xuất</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <section class="home">
             <div class="container">
