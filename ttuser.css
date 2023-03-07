@@ -169,7 +169,7 @@ body.dark .content-table {
     left: 25%;
     top: 50%;
     margin-right: -50%;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
 }
 
 /* body.dark  */

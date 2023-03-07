@@ -52,3 +52,47 @@ trig.forEach((element) => {
         lastClickElement = element; // Ghi lại thẻ vừa click để xóa
     });
 });
+
+// Xử lý active loại phim
+let typeFilm = $(".button-type-film").toArray();
+let typeClick = $("#all-film"); // Mặc định ban đầu là tất cả film
+typeFilm.forEach((element) => {
+    $(element).click(() => {
+        typeClick.removeClass("active"); // Xóa trạng thái active
+        $(element).addClass("active"); // Thêm trạng thái active
+        typeClick = $(element); // Lưu lại button vừa click
+    });
+});
+
+let slides = $(".slider > .card").toArray();
+let widthCard = parseFloat($(".slider > .card").css("width"));
+let marginCard = parseFloat(
+    $(".slider > .card").first().next().css("margin-left")
+); // Lấy margin left của thẻ thứ 2 vì thẻ thứ 1 đã margin-left 0
+// console.log(parseFloat(widthCard), marginCard);
+let numberOfSlides = slides.length;
+let initialIndex = 0;
+
+function prevSlide() {
+    initialIndex = initialIndex - 1 < 0 ? numberOfSlides - 1 : initialIndex - 1;
+    $(".slider").css({
+        transform: `translate3d(${
+            -initialIndex * (widthCard + marginCard)
+        }px, 0px, 0px)`,
+    });
+}
+function nextSlide() {
+    initialIndex = initialIndex + 1 == numberOfSlides ? 0 : initialIndex + 1;
+    $(".slider").css({
+        transform: `translate3d(${
+            -initialIndex * (widthCard + marginCard)
+        }px, 0px, 0px)`,
+    });
+}
+$("#pre-btn-slider").click(() => prevSlide());
+$("#next-btn-slider").click(() => nextSlide());
+
+// Auto chuyển slide
+setInterval(() => {
+    nextSlide();
+}, 5000);

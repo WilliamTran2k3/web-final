@@ -7,6 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="a.css" />
+        <link rel="stylesheet" href="slider.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -27,6 +28,7 @@
                 <a href="/">
                     <div class="logo">
                         <div class="brand">W</div>
+                        <!-- <img src="./assets/logo.png" alt="" class="w-100"> -->
                         <div class="text header-text">
                             <span class="name">WillCinema</span>
                         </div>
@@ -135,25 +137,24 @@
                     </a>
                 </li>
                 <li class="my-nav-bottom-link has-sub-menu">
-                        <i class="fa-solid fa-calendar-days icon"></i>
-                        <span class="nav-text text">Phim</span>
-                        <ul class="sub-menu-nav mid">
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-user icon sub-icon"></i>
-                                    <span class="sub-menu-text">Đang chiếu</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i
-                                        class="fa-solid fa-right-from-bracket icon logout-icon sub-icon"
-                                    ></i>
-                                    <span class="sub-menu-text">Sắp chiếu</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </a>
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <span class="nav-text text">Phim</span>
+                    <ul class="sub-menu-nav mid">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-user icon sub-icon"></i>
+                                <span class="sub-menu-text">Đang chiếu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i
+                                    class="fa-solid fa-right-from-bracket icon logout-icon sub-icon"
+                                ></i>
+                                <span class="sub-menu-text">Sắp chiếu</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="my-nav-bottom-link">
                     <a href="#cinema" id="cinema">
@@ -195,12 +196,12 @@
                 </li>
             </ul>
         </nav>
-        <section class="home">
+        <section class="home my-section">
             <div class="container">
                 <div style="height: 10px"></div>
                 <div
                     id="myCarousel"
-                    class="my-container carousel slide"
+                    class="my-container carousel slide carousel-fade"
                     data-bs-ride="carousel"
                 >
                     <div class="carousel-inner">
@@ -240,125 +241,31 @@
                     </button>
                 </div>
                 <div class="dangchieu">
-                    <h2 class="my-5 dang-sap-chieu text">PHIM ĐANG CHIẾU</h2>
-                    <div class="row-phim">
-                        <div class="card">
-                            <div class="poster">
-                                <img src="./assets/poster.jpg" alt="poster" />
-                            </div>
-                            <div class="detail">
-                                <h2 class="name-film">
-                                    AVATAR 2: THE WAY OF WATER
-                                </h2>
-                                <h3 class="director">Đạo diễn James Cameron</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span>Viễn tưởng</span>
-                                    <span class="action">Hành động</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="poster">
-                                <img src="./assets/film2.png" alt="poster" />
-                            </div>
-                            <div class="detail">
-                                <h2 class="name-film">M3GAN</h2>
-                                <h3 class="director">
-                                    Đạo diễn Gerard Johnstone
-                                </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="horror">Kinh dị</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="poster">
-                                <img src="./assets/film3.jpg" alt="poster" />
-                            </div>
-                            <div class="detail">
-                                <h2 class="name-film">
-                                    SWORD ART ONLINE: PROGRESSIVE – SCHERZO OF
-                                    DEEP NIGHT
-                                </h2>
-                                <h3 class="director">Đạo diễn Kōno Ayako</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="action">Hành động</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="poster">
-                                <img src="./assets/film4.jpg" alt="poster" />
-                            </div>
-                            <div class="detail">
-                                <h2 class="name-film">BABYLON (C18)</h2>
-                                <h3 class="director">
-                                    Đạo diễn Damien Chazelle
-                                </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="action">Hành động</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="poster">
-                                <img src="./assets/film5.jpg" alt="poster" />
-                            </div>
-                            <div class="detail">
-                                <h2 class="name-film">
-                                    CARRIE & KOLA SIÊU PHÀM
-                                </h2>
-                                <h3 class="director">
-                                    Đạo diễn Oh Sung Yoon, Lee Chun Baek
-                                </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>3/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="adventure">Phiêu lưu</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mt-5 dang-sap-chieu text">
+                        <h2 class="mb-0">PHIM ĐANG CHIẾU</h2>
+                    </div>
+                    <div class="type-film d-flex justify-content-between">
+                        <button
+                            type="button"
+                            class="btn button-type-film active"
+                            id="all-film"
+                        >
+                            Tất cả
+                        </button>
+                        <button
+                            type="button"
+                            class="btn button-type-film"
+                            id="2d-film"
+                        >
+                            2D
+                        </button>
+                        <button
+                            type="button"
+                            class="btn button-type-film"
+                            id="3d-film"
+                        >
+                            3D
+                        </button>
                     </div>
                     <div class="row-phim">
                         <div class="card">
@@ -370,17 +277,19 @@
                                     AVATAR 2: THE WAY OF WATER
                                 </h2>
                                 <h3 class="director">Đạo diễn James Cameron</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span>Viễn tưởng</span>
-                                    <span class="action">Hành động</span>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c16">C16</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                    <span
+                                        class="film-3d d-flex align-items-center justify-content-center"
+                                        >3D</span
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -393,16 +302,15 @@
                                 <h3 class="director">
                                     Đạo diễn Gerard Johnstone
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="horror">Kinh dị</span>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c18">C18</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -416,17 +324,19 @@
                                     DEEP NIGHT
                                 </h2>
                                 <h3 class="director">Đạo diễn Kōno Ayako</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="action">Hành động</span>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="p">P</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                    <span
+                                        class="film-3d d-flex align-items-center justify-content-center"
+                                        >3D</span
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -439,17 +349,15 @@
                                 <h3 class="director">
                                     Đạo diễn Damien Chazelle
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="action">Hành động</span>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="p">P</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -464,25 +372,294 @@
                                 <h3 class="director">
                                     Đạo diễn Oh Sung Yoon, Lee Chun Baek
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
 
-                                    <span>3/5</span>
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c16">C16</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
                                 </div>
-                                <div class="tags">
-                                    <span class="anime">Hoạt hình</span>
-                                    <span class="adventure">Phiêu lưu</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="poster">
+                                <img src="./assets/poster.jpg" alt="poster" />
+                            </div>
+                            <div class="detail">
+                                <h2 class="name-film">
+                                    AVATAR 2: THE WAY OF WATER
+                                </h2>
+                                <h3 class="director">Đạo diễn James Cameron</h3>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c16">C16</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                    <span
+                                        class="film-3d d-flex align-items-center justify-content-center"
+                                        >3D</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="poster">
+                                <img src="./assets/film2.png" alt="poster" />
+                            </div>
+                            <div class="detail">
+                                <h2 class="name-film">M3GAN</h2>
+                                <h3 class="director">
+                                    Đạo diễn Gerard Johnstone
+                                </h3>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c18">C18</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="poster">
+                                <img src="./assets/film3.jpg" alt="poster" />
+                            </div>
+                            <div class="detail">
+                                <h2 class="name-film">
+                                    SWORD ART ONLINE: PROGRESSIVE – SCHERZO OF
+                                    DEEP NIGHT
+                                </h2>
+                                <h3 class="director">Đạo diễn Kōno Ayako</h3>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="p">P</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                    <span
+                                        class="film-3d d-flex align-items-center justify-content-center"
+                                        >3D</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="poster">
+                                <img src="./assets/film4.jpg" alt="poster" />
+                            </div>
+                            <div class="detail">
+                                <h2 class="name-film">BABYLON (C18)</h2>
+                                <h3 class="director">
+                                    Đạo diễn Damien Chazelle
+                                </h3>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="p">P</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="poster">
+                                <img src="./assets/film5.jpg" alt="poster" />
+                            </div>
+                            <div class="detail">
+                                <h2 class="name-film">
+                                    CARRIE & KOLA SIÊU PHÀM
+                                </h2>
+                                <h3 class="director">
+                                    Đạo diễn Oh Sung Yoon, Lee Chun Baek
+                                </h3>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c16">C16</span>
+                                    <span
+                                        class="film-2d d-flex align-items-center justify-content-center"
+                                        >2D</span
+                                    >
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sapchieu">
-                    <h2 class="my-5 dang-sap-chieu text">PHIM SẮP CHIẾU</h2>
+                    <div class="mt-5 dang-sap-chieu text">
+                        <h2 class="mb-0">PHIM SẮP CHIẾU</h2>
+                    </div>
+                    <div class="slider-wrapper overflow-hidden">
+                        <div class="slider-buttons text-end">
+                            <button class="pre slider-button" id="pre-btn-slider"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="next slider-button" id="next-btn-slider"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <div class="slider">
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/poster.jpg" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">
+                                        AVATAR 2: THE WAY OF WATER
+                                    </h2>
+                                    <h3 class="director">Đạo diễn James Cameron</h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="c16">C16</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                        <span
+                                            class="film-3d d-flex align-items-center justify-content-center"
+                                            >3D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/poster.jpg" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">
+                                        AVATAR 2: THE WAY OF WATER
+                                    </h2>
+                                    <h3 class="director">Đạo diễn James Cameron</h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="c16">C16</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                        <span
+                                            class="film-3d d-flex align-items-center justify-content-center"
+                                            >3D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/film2.png" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">M3GAN</h2>
+                                    <h3 class="director">
+                                        Đạo diễn Gerard Johnstone
+                                    </h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="c18">C18</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/film3.jpg" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">
+                                        SWORD ART ONLINE: PROGRESSIVE – SCHERZO OF
+                                        DEEP NIGHT
+                                    </h2>
+                                    <h3 class="director">Đạo diễn Kōno Ayako</h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="p">P</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                        <span
+                                            class="film-3d d-flex align-items-center justify-content-center"
+                                            >3D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/film4.jpg" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">BABYLON (C18)</h2>
+                                    <h3 class="director">
+                                        Đạo diễn Damien Chazelle
+                                    </h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="p">P</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="poster">
+                                    <img src="./assets/film5.jpg" alt="poster" />
+                                </div>
+                                <div class="detail">
+                                    <h2 class="name-film">
+                                        CARRIE & KOLA SIÊU PHÀM
+                                    </h2>
+                                    <h3 class="director">
+                                        Đạo diễn Oh Sung Yoon, Lee Chun Baek
+                                    </h3>
+    
+                                    <div
+                                        class="tags d-flex justify-content-center p-2"
+                                    >
+                                        <span class="c16">C16</span>
+                                        <span
+                                            class="film-2d d-flex align-items-center justify-content-center"
+                                            >2D</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div >
+                </div>
+                <div class="uudai">
+                    <div class="mt-5 dang-sap-chieu text">
+                        <h2 class="mb-0">ƯU ĐÃI</h2>
+                    </div>
                     <div class="row-phim">
                         <div class="card">
                             <div class="poster">
@@ -493,15 +670,10 @@
                                     AVATAR 2: THE WAY OF WATER
                                 </h2>
                                 <h3 class="director">Đạo diễn James Cameron</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
                                     <span>Viễn tưởng</span>
                                     <span class="action">Hành động</span>
                                 </div>
@@ -516,16 +688,11 @@
                                 <h3 class="director">
                                     Đạo diễn Gerard Johnstone
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <span>4/5</span>
-                                </div>
-                                <div class="tags">
-                                    <span class="horror">Kinh dị</span>
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
+                                    <span class="c16">C16</span>
                                 </div>
                             </div>
                         </div>
@@ -539,15 +706,10 @@
                                     DEEP NIGHT
                                 </h2>
                                 <h3 class="director">Đạo diễn Kōno Ayako</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
                                     <span class="anime">Hoạt hình</span>
                                     <span class="action">Hành động</span>
                                 </div>
@@ -562,15 +724,10 @@
                                 <h3 class="director">
                                     Đạo diễn Damien Chazelle
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5/5</span>
-                                </div>
-                                <div class="tags">
+
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
                                     <span class="anime">Hoạt hình</span>
                                     <span class="action">Hành động</span>
                                 </div>
@@ -587,17 +744,10 @@
                                 <h3 class="director">
                                     Đạo diễn Oh Sung Yoon, Lee Chun Baek
                                 </h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
 
-                                    <i class="fa-regular fa-star"></i>
-
-                                    <span>3/5</span>
-                                </div>
-                                <div class="tags">
+                                <div
+                                    class="tags d-flex justify-content-center p-2"
+                                >
                                     <span class="anime">Hoạt hình</span>
                                     <span class="adventure">Phiêu lưu</span>
                                 </div>
